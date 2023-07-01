@@ -82,8 +82,8 @@ height: 50px;
 
 function autoPlay () {
   if (!isAutoPlaying) {
-  document.querySelector('.js-autoPlay-button')
-    .innerHtml = 'Stop play';
+        document.querySelector('.js-autoPlay-button')
+          .innerHtml = 'Stop playing';
     
   intervalId = setInterval(() => {
   const playerMove = pickComputerMove();
