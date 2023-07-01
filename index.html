@@ -82,7 +82,8 @@ height: 50px;
 
 function autoPlay () {
   if (!isAutoPlaying) {
-        document.querySelector('.js-autoPlay-button').innerHtml = 'Stop playing';
+        document.querySelector('.js-autoPlay-button')
+  .innerHTML = 'Stop playing';
     
   intervalId = setInterval(() => {
   const playerMove = pickComputerMove();
@@ -91,7 +92,8 @@ function autoPlay () {
   isAutoPlaying = true;
 
 } else {
-    document.querySelector('.js-autoPlay-button').innerHtml = 'Auto play';
+     document.querySelector('.js-autoPlay-button')
+  .innerHTML = 'Auto play';
     
   clearInterval(intervalId);
   isAutoPlaying = false;
