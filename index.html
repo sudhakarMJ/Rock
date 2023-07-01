@@ -63,7 +63,7 @@ height: 50px;
 
     <button class="js-reset-button reset-button">Reset Score</button> 
 
-      <button class="js-autoPlay-button  autoPlay-button">Auto play</button>
+      <button class="js-autoPlay-button autoPlay-button">Auto play</button>
 
 
 
@@ -83,7 +83,7 @@ height: 50px;
 function autoPlay () {
   if (!isAutoPlaying) {
         document.querySelector('.js-autoPlay-button')
-          .innerHtml = 'Stop playing';
+          .innerHtml = 'Stop playing'
     
   intervalId = setInterval(() => {
   const playerMove = pickComputerMove();
@@ -93,7 +93,7 @@ function autoPlay () {
 
 } else {
     document.querySelector('.js-autoPlay-button')
-      .innerHtml = 'Auto Play';
+      .innerHtml = 'Auto Play'
     
   clearInterval(intervalId);
   isAutoPlaying = false;
